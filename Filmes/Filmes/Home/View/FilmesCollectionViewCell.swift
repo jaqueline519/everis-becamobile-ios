@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import AlamofireImage
 
-class FilmesCollectionViewCell: UICollectionViewCell {
+class FilmesCollectionViewCell: UICollectionViewCell {    
     
     @IBOutlet weak var ImagemFilme: UIImageView!
+  
 }

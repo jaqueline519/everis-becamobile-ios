@@ -22,8 +22,11 @@ class Service {
             (responseData) in
             guard let data = responseData.data else {return}
             do {
-                let filmes = try JSONDecoder().decode(FilmesSemana.self, from: data)
-                print("Filmes == \(filmes)")
+                let filmes = try JSONDecoder().decode(Welcome.self, from: data)
+                let resultado = filmes.results
+                print(resultado.count)
+                print(resultado[0].posterPath)
+//                print("Filmes == \(filmes)")
             } catch {
                 print("Erro ao decodificar == \(error)")
             }

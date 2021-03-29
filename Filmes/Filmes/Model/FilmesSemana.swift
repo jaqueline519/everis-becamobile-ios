@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - FilmesSemana
-struct FilmesSemana: Codable {
+// MARK: - Welcome
+struct Welcome: Codable {
     let page: Int
     let results: [Result]
     let totalPages, totalResults: Int
@@ -22,42 +22,43 @@ struct FilmesSemana: Codable {
 
 // MARK: - Result
 struct Result: Codable {
+    let overview: String
+    let releaseDate: String?
+    let adult: Bool?
+    let backdropPath: String
     let genreIDS: [Int]
-    let title: String?
+    let voteCount: Int
     let originalLanguage: OriginalLanguage
     let originalTitle: String?
     let posterPath: String
+    let title: String?
     let video: Bool?
     let voteAverage: Double
-    let overview: String
-    let releaseDate: String?
-    let voteCount, id: Int
-    let adult: Bool?
-    let backdropPath: String
+    let id: Int
     let popularity: Double
     let mediaType: MediaType
+    let firstAirDate, originalName: String?
     let originCountry: [String]?
-    let firstAirDate, name, originalName: String?
+    let name: String?
 
     enum CodingKeys: String, CodingKey {
+        case overview
+        case releaseDate = "release_date"
+        case adult
+        case backdropPath = "backdrop_path"
         case genreIDS = "genre_ids"
-        case title
+        case voteCount = "vote_count"
         case originalLanguage = "original_language"
         case originalTitle = "original_title"
         case posterPath = "poster_path"
-        case video
+        case title, video
         case voteAverage = "vote_average"
-        case overview
-        case releaseDate = "release_date"
-        case voteCount = "vote_count"
-        case id, adult
-        case backdropPath = "backdrop_path"
-        case popularity
+        case id, popularity
         case mediaType = "media_type"
-        case originCountry = "origin_country"
         case firstAirDate = "first_air_date"
-        case name
         case originalName = "original_name"
+        case originCountry = "origin_country"
+        case name
     }
 }
 
@@ -68,6 +69,6 @@ enum MediaType: String, Codable {
 
 enum OriginalLanguage: String, Codable {
     case en = "en"
-    case es = "es"
     case ja = "ja"
+    case ru = "ru"
 }
