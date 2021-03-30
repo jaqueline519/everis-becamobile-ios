@@ -11,5 +11,5 @@ import AlamofireImage
 class FilmesCollectionViewCell: UICollectionViewCell {    
     
     @IBOutlet weak var ImagemFilme: UIImageView!
-  
+   
 }

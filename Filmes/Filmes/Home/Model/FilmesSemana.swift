@@ -6,8 +6,6 @@
 //
 
 import Foundation
-
-// MARK: - Welcome
 struct Welcome: Codable {
     let page: Int
     let results: [Result]
@@ -19,7 +17,6 @@ struct Welcome: Codable {
         case totalResults = "total_results"
     }
 }
-
 // MARK: - Result
 struct Result: Codable {
     let overview: String
@@ -62,6 +59,7 @@ struct Result: Codable {
     }
 }
 
+
 enum MediaType: String, Codable {
     case movie = "movie"
     case tv = "tv"
@@ -72,3 +70,5 @@ enum OriginalLanguage: String, Codable {
     case ja = "ja"
     case ru = "ru"
 }
+
+

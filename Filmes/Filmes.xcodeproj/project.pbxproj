@@ -123,6 +123,7 @@
 		EA53642C261171C0008F0917 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EACA587D2611371F00A3E596 /* FilmesSemana.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				EAE3F92626113B3900DA8E8E /* Home */,
-				EACA58822611377C00A3E596 /* Model */,
 				EACA586626112FEE00A3E596 /* Service */,
 				EACA582C2611157500A3E596 /* AppDelegate.swift */,
 				EACA582E2611157500A3E596 /* SceneDelegate.swift */,
@@ -197,14 +197,6 @@
 				EACA58672611300700A3E596 /* ServiceAPI.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		EACA58822611377C00A3E596 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				EACA587D2611371F00A3E596 /* FilmesSemana.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		EAE3F92626113B3900DA8E8E /* Home */ = {
