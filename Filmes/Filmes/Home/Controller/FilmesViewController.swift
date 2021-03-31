@@ -10,7 +10,7 @@ import Alamofire
 import AlamofireImage
 
 class FilmesViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-
+    
     // MARK -IBOutlet
     @IBOutlet weak var colecaoFilmes: UICollectionView!
     
@@ -73,14 +73,14 @@ class FilmesViewController: UIViewController, UICollectionViewDataSource,UIColle
         return celulaFilme
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-            
+        
         let filmeSelecionado = listaDeFilmes[indexPath.item]
-       
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let controller = storyboard.instantiateViewController(identifier: "detalhesFilmes") as! DetalhesFilmesViewController
-            controller.id = filmeSelecionado.id
-            present(controller, animated: true, completion: nil)
-      
-        }
-   
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(identifier: "detalhesFilmes") as! DetalhesFilmesViewController
+        controller.id = filmeSelecionado.id
+        present(controller, animated: true, completion: nil)
+        
+    }
+    
 }

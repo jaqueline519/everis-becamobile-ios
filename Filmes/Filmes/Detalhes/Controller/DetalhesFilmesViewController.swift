@@ -36,7 +36,7 @@ class DetalhesFilmesViewController: UIViewController {
     }
     
     // MARK - Métodos
-        func request(){
+    func request(){
         print("identificador: \(id)")
         let url = "https://api.themoviedb.org/3/movie/\(id)?api_key=49cfc8f69b2e2e2394f4072c55dfbf71"
         
@@ -60,12 +60,11 @@ class DetalhesFilmesViewController: UIViewController {
             guard let imageUrl:URL = URL(string: urlStr) else {return}
             let imageData:NSData = NSData(contentsOf: imageUrl)!
             let image = UIImage(data: imageData as Data)
-//            print("URL: \(urlStr)")
             if let detalhesDoFilme = self.detalhesFilmeSelecionado{
                 self.imagemDetalhes.image = image
                 self.filmeSelecionado.text = detalhesDoFilme.title
                 self.tituloOriginal.text = detalhesDoFilme.originalTitle
-
+                
                 self.detalhes.text = detalhesDoFilme.overview
             }
         }
