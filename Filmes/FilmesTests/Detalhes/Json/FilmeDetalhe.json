@@ -1,0 +1,79 @@
+{
+    "adult": false,
+    "backdrop_path": "/vKzbIoHhk1z9DWYi8kyFe9Gg0HF.jpg",
+    "belongs_to_collection": {
+        "id": 647077,
+        "name": "Coming to America Collection",
+        "poster_path": "/t0P7VTzgjRIFsRGwMM9c3RiVCEj.jpg",
+        "backdrop_path": "/t8dkNNwdWk8ZUkcf5XHvH9Bd7Yb.jpg"
+    },
+    "budget": 60000000,
+    "genres": [
+        {
+            "id": 35,
+            "name": "Comedy"
+        }
+    ],
+    "homepage": "https://www.amazon.com/dp/B08R114191",
+    "id": 484718,
+    "imdb_id": "tt6802400",
+    "original_language": "en",
+    "original_title": "Coming 2 America",
+    "overview": "Prince Akeem Joffer is set to become King of Zamunda when he discovers he has a son he never knew about in America – a street savvy Queens native named Lavelle. Honoring his royal father's dying wish to groom this son as the crown prince, Akeem and Semmi set off to America once again.",
+    "popularity": 753.319,
+    "poster_path": "/nWBPLkqNApY5pgrJFMiI9joSI30.jpg",
+    "production_companies": [
+        {
+            "id": 4,
+            "logo_path": "/fycMZt242LVjagMByZOLUGbCvv3.png",
+            "name": "Paramount",
+            "origin_country": "US"
+        },
+        {
+            "id": 114732,
+            "logo_path": "/tNCbisMxO5mX2X2bOQxHHQZVYnT.png",
+            "name": "New Republic Pictures",
+            "origin_country": "US"
+        },
+        {
+            "id": 30,
+            "logo_path": null,
+            "name": "Eddie Murphy Productions",
+            "origin_country": "US"
+        },
+        {
+            "id": 11581,
+            "logo_path": "/6K0xgnlb35PU31T2IH3deVGvTlX.png",
+            "name": "Misher Films",
+            "origin_country": "US"
+        },
+        {
+            "id": 20580,
+            "logo_path": "/tkFE81jJIqiFYPP8Tho57MXRQEx.png",
+            "name": "Amazon Studios",
+            "origin_country": "US"
+        }
+    ],
+    "production_countries": [
+        {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+        }
+    ],
+    "release_date": "2021-03-05",
+    "revenue": 0,
+    "runtime": 110,
+    "spoken_languages": [
+        {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+        }
+    ],
+    "status": "Released",
+    "tagline": "A sequel is in the heir.",
+    "title": "Coming 2 America",
+    "video": false,
+    "vote_average": 6.9,
+    "vote_count": 1097
+}

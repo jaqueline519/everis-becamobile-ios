@@ -13,12 +13,13 @@ class DetalhesFilmesViewController: UIViewController {
     
     // MARK -IBOutlet
     @IBOutlet weak var scrolDetalhes: UIScrollView!
+    @IBAction func botaoVoltar(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     @IBOutlet weak var imagemDetalhes: UIImageView!
     
     @IBOutlet weak var filmeSelecionado: UILabel!
-    
-    @IBOutlet weak var rating: UILabel!
     @IBOutlet weak var tituloOriginal: UILabel!
     @IBOutlet weak var detalhes: UILabel!
     
@@ -64,7 +65,7 @@ class DetalhesFilmesViewController: UIViewController {
                 self.imagemDetalhes.image = image
                 self.filmeSelecionado.text = detalhesDoFilme.title
                 self.tituloOriginal.text = detalhesDoFilme.originalTitle
-                self.rating.text = "\(detalhesDoFilme.popularity)"
+
                 self.detalhes.text = detalhesDoFilme.overview
             }
         }

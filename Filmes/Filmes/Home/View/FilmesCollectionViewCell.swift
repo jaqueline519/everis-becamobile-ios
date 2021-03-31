@@ -12,4 +12,5 @@ class FilmesCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var ImagemFilme: UIImageView!
    
+
 }

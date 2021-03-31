@@ -10,7 +10,7 @@ import Alamofire
 import AlamofireImage
 
 class FilmesViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
+
     // MARK -IBOutlet
     @IBOutlet weak var colecaoFilmes: UICollectionView!
     
@@ -64,7 +64,7 @@ class FilmesViewController: UIViewController, UICollectionViewDataSource,UIColle
             celulaFilme.ImagemFilme.af_setImage(withURL: postaImagemURL!)
             
             celulaFilme.clipsToBounds = true
-            celulaFilme.layer.cornerRadius = 20;
+            celulaFilme.layer.cornerRadius = 6
             celulaFilme.layer.masksToBounds = true
             celulaFilme.contentMode = .scaleAspectFit
             
@@ -82,10 +82,5 @@ class FilmesViewController: UIViewController, UICollectionViewDataSource,UIColle
             present(controller, animated: true, completion: nil)
       
         }
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            
-            let larguraDaCelula = collectionView.bounds.width / 2
-            return CGSize(width: 15, height: 160)
-            
-        }
+   
 }

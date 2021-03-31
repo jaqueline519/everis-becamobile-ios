@@ -21,6 +21,8 @@
 		EACA58442611157D00A3E596 /* FilmesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA58432611157D00A3E596 /* FilmesTests.swift */; };
 		EACA584F2611157D00A3E596 /* FilmesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA584E2611157D00A3E596 /* FilmesUITests.swift */; };
 		EACA587E2611371F00A3E596 /* FilmesSemana.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA587D2611371F00A3E596 /* FilmesSemana.swift */; };
+		EAEE23652614C45F00880471 /* FilmeDetalhe.json in Resources */ = {isa = PBXBuildFile; fileRef = EAEE23642614C45F00880471 /* FilmeDetalhe.json */; };
+		EAEE237F2614F13100880471 /* FimesPaginaInicial.json in Resources */ = {isa = PBXBuildFile; fileRef = EAEE237E2614F13100880471 /* FimesPaginaInicial.json */; };
 		EF4CB7E5C1CC190AFEBCEE7D /* Pods_FilmesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC83B41DCECE31EF79EEFB24 /* Pods_FilmesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		EACA584E2611157D00A3E596 /* FilmesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmesUITests.swift; sourceTree = "<group>"; };
 		EACA58502611157D00A3E596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EACA587D2611371F00A3E596 /* FilmesSemana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmesSemana.swift; sourceTree = "<group>"; };
+		EAEE23642614C45F00880471 /* FilmeDetalhe.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FilmeDetalhe.json; sourceTree = "<group>"; };
+		EAEE237E2614F13100880471 /* FimesPaginaInicial.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FimesPaginaInicial.json; sourceTree = "<group>"; };
 		EC83B41DCECE31EF79EEFB24 /* Pods_FilmesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,14 +126,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EA2C879D261458CF0008B3C3 /* TelaDetalhes */ = {
+		EA2C879D261458CF0008B3C3 /* Detalhes */ = {
 			isa = PBXGroup;
 			children = (
 				EA2C87A0261458FC0008B3C3 /* Model */,
 				EA2C879F261458F70008B3C3 /* View */,
 				EA2C879E261458EC0008B3C3 /* Controller */,
 			);
-			path = TelaDetalhes;
+			path = Detalhes;
 			sourceTree = "<group>";
 		};
 		EA2C879E261458EC0008B3C3 /* Controller */ = {
@@ -196,7 +200,7 @@
 		EACA582B2611157500A3E596 /* Filmes */ = {
 			isa = PBXGroup;
 			children = (
-				EA2C879D261458CF0008B3C3 /* TelaDetalhes */,
+				EA2C879D261458CF0008B3C3 /* Detalhes */,
 				EAE3F92626113B3900DA8E8E /* Home */,
 				EACA582C2611157500A3E596 /* AppDelegate.swift */,
 				EACA582E2611157500A3E596 /* SceneDelegate.swift */,
@@ -211,6 +215,8 @@
 		EACA58422611157D00A3E596 /* FilmesTests */ = {
 			isa = PBXGroup;
 			children = (
+				EAEE23722614F08700880471 /* Filmes */,
+				EAEE235A2614BF1100880471 /* Detalhes */,
 				EACA58432611157D00A3E596 /* FilmesTests.swift */,
 				EACA58452611157D00A3E596 /* Info.plist */,
 			);
@@ -240,6 +246,70 @@
 			isa = PBXGroup;
 			children = (
 				EACA58302611157500A3E596 /* FilmesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EAEE235A2614BF1100880471 /* Detalhes */ = {
+			isa = PBXGroup;
+			children = (
+				EAEE23632614C42B00880471 /* Json */,
+				EAEE23622614C40F00880471 /* Model */,
+				EAEE235B2614BF1C00880471 /* Controller */,
+			);
+			path = Detalhes;
+			sourceTree = "<group>";
+		};
+		EAEE235B2614BF1C00880471 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EAEE23622614C40F00880471 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAEE23632614C42B00880471 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				EAEE23642614C45F00880471 /* FilmeDetalhe.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		EAEE23722614F08700880471 /* Filmes */ = {
+			isa = PBXGroup;
+			children = (
+				EAEE23732614F08E00880471 /* Json */,
+				EAEE23742614F09500880471 /* Model */,
+				EAEE23752614F09C00880471 /* Controller */,
+			);
+			path = Filmes;
+			sourceTree = "<group>";
+		};
+		EAEE23732614F08E00880471 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		EAEE23742614F09500880471 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAEE237E2614F13100880471 /* FimesPaginaInicial.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAEE23752614F09C00880471 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -362,6 +432,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAEE237F2614F13100880471 /* FimesPaginaInicial.json in Resources */,
+				EAEE23652614C45F00880471 /* FilmeDetalhe.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
