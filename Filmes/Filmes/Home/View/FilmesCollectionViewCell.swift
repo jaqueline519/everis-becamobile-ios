@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AlamofireImage
+
 
 class FilmesCollectionViewCell: UICollectionViewCell {    
     
